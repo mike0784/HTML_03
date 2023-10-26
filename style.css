@@ -1,4 +1,25 @@
-* {
+@font-face {
+    font-family: 'Gilroy-Bold';
+    font-weight: 600;
+    font-style: normal;
+    src: url("fonts/Gilroy-Bold.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    font-weight: 400;
+    font-style: normal;
+    src: url("fonts/Gilroy-Medium.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    font-weight: 400;
+    font-style: normal;
+    src: url("fonts/Gilroy-Regular.woff2") format('woff2');
+}
+
+*{
     padding: 0;
     margin: 0;
 }
@@ -10,7 +31,6 @@
 .header {
     height: 8rem;
     display: flex;
-    /*align-items: center;*/
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -41,26 +61,21 @@
 
 .a_menu {
     text-decoration: none;
-    font-family: Gilroy-Medium;
+    font-family: 'Gilroy-Bold';
     font-size: 14px;
     padding-top: 3px;
     padding-left: 3px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 5%;
+    column-gap: 30px;
 }
 
 .block1 {
     display: grid;
-    /*grid-template-columns: 1fr 1fr;*/
     grid-template-rows: 1fr;
-    /*margin: 2px;*/
 }
 
 .block2 {
@@ -69,27 +84,18 @@
 }
 .p1 {
     color: #000;
-    font-family: Gilroy-Bold;
+    font-family: 'Gilroy-Bold';
     font-size: 60px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     text-align: start;
-    /*grid-column-start: 1;
-    grid-column-end: 3;*/
 }
 .p2 {
     padding-right: 10%;
     padding-top: 5%;
     padding-bottom: 5%;
     color: #888;
-    font-family: Gilroy-Medium;
+    font-family: 'Gilroy-Medium';
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
     line-height: normal;
-    /*grid-column-start: 1;
-    grid-column-end: 3;*/
 }
 .btn {
     display: grid;
@@ -114,7 +120,6 @@
     width: 1200px;
     display: flex;
     flex-wrap: nowrap;
-    /*align-content: space-between;*/
     justify-content: space-between;
     align-items: stretch;
     flex-direction: row;
@@ -123,56 +128,46 @@
 
 .item {
     display: grid;
-    width: 381px;
-    height: 291px;
-    padding: 5%;
-    align-content: space-evenly;
-    align-items: end;
-    justify-items: stretch;
+    padding: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
+    grid-gap: 15px;
+    margin: 30px;
     background: url(/transition.png) 0 0 no-repeat;
     transition: background 1.0s ease;
 }
 
 .item:hover {
-    border: solid 1px rgb(5, 5, 5);
-    border-radius: 10px;
     background: rgb(107, 231, 204);
     color: rgb(5, 5, 5);
 }
 
 .item h3 {
     color: #000;
-    font-family: Gilroy-Bold;
+    font-family: 'Gilroy-Bold';
     font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
     line-height: normal;
 }
 
 .item p {
     color: #666;
-    font-family: Gilroy-Regular;
+    font-family: 'Gilroy-Regular';
     font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 22.5px */
+    line-height: 150%;
 }
 
 .item a {
+    text-decoration: none;
     color: #000;
-    font-family: Gilroy-Bold;
+    font-family: 'Gilroy-Bold';
     font-size: 11px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 16.5px */
+    line-height: 150%;
 }
 
 .item img {
     width: 70px;
     height: 70px;
-    
+
 }
 
 
